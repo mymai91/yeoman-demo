@@ -9,6 +9,7 @@
  */
 angular.module('myNewProjectApp')
   .controller('MainCtrl', function () {
+    console.log('main');
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
