@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'restangular'
   ])
   .config(function (
     $stateProvider,
@@ -34,6 +35,9 @@ angular
         });
       // For any unmatched url, redirect to /
       $urlRouterProvider.otherwise('/main');
+
+      // Config Restangular
+      RestangularProvider.setBaseUrl('/api/');
   })
   .run(function () {
     console.log('run');
