@@ -33,7 +33,7 @@ angular
           controller: 'AboutCtrl'
         });
       // For any unmatched url, redirect to /
-      $urlRouterProvider.otherwise('/');
+      $urlRouterProvider.otherwise('/main');
   })
   .run(function () {
     console.log('run');
